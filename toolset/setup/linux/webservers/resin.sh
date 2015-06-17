@@ -5,7 +5,7 @@ RVER=4.0.41
 RETCODE=$(fw_exists ${IROOT}/resin-$RVER.installed)
 [ ! "$RETCODE" == 0 ] || { return 0; }
 
-fw_depends java7
+fw_depends java
 sudo cp -r $JAVA_HOME/include $JAVA_HOME/jre/bin/
 
 fw_get http://www.caucho.com/download/resin-$RVER.tar.gz
