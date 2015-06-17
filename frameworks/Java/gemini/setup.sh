@@ -7,7 +7,7 @@
 # of their initial setup.  On Windows, the script can be run through 
 # Git bash.
 
-export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export RESIN_HOME=${IROOT}/resin-4.0.41
 
 projectName="GeminiHello"
