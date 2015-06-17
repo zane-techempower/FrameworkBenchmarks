@@ -1,9 +1,9 @@
 #!/bin/bash
 
-RETCODE=$(fw_exists java8.installed)
+RETCODE=$(fw_exists java.installed)
 [ ! "$RETCODE" == 0 ] || { \
   # Load environment variables
-  . $IROOT/java8.installed
+  . $IROOT/java.installed
   return 0; }
 
 sudo add-apt-repository -y ppa:webupd8team/java
@@ -29,5 +29,5 @@ done
 
 # Setup environment variables
 JAVA_HOME=/usr/lib/jvm/java-8-oracle
-echo "export JAVA_HOME=${JAVA_HOME}" > $IROOT/java8.installed
-echo "export PATH=${JAVA_HOME}/bin:$PATH" >> $IROOT/java8.installed
+echo "export JAVA_HOME=${JAVA_HOME}" > $IROOT/java.installed
+echo "export PATH=${JAVA_HOME}/bin:$PATH" >> $IROOT/java.installed
