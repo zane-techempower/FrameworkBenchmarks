@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # load java environment variables
-source $IROOT/java7.installed
+source $IROOT/java.installed
 
 ${IROOT}/sbt/bin/sbt assembly
 
